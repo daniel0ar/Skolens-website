@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
 
 .hero {
     width: 100%;
@@ -13,4 +16,72 @@
     line-height: 0.8;
     margin: 0 auto 0 1px;
     color: aliceblue;
+}
+
+.hero .hero-btn {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.125rem;
+    background-image: none;
+    margin: 0;
+    padding: 19px 69px 19px 68px;
+    transition: 0.5s;
+}
+
+.hero .btn-discord:hover {
+    background: transparent;
+    border-color: #0054f7;
+    color: #0054f7;
+}
+
+.hero .btn-instagram:hover {
+    background: transparent;
+    border-color: #e54786;
+    color: #e54786;
+}
+
+.hero .btn-discord {
+    background: #0054f7;
+}
+
+.hero .btn-instagram {
+    background: #e54786;
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+.about {
+    width: 100%;
+    background: rgb(6,6,87);
+}
+
+.about p {
+    color: #ffffff;
+    letter-spacing: 0px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.about .section-title {
+    color: #ffffff;
+    font-size: 4.5rem;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 9px 0 -8px auto;
+    border-style: solid;
+    border-color: #ffffff;
+    border-left-width: 20px;
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    padding: 10px 20px;
+}
+
+.about .title-container {
+    margin-left: auto;
+    margin-right: 0;
 }
