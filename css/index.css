@@ -16,16 +16,15 @@
     line-height: 0.8;
     margin: 0 auto 0 1px;
     color: aliceblue;
+    max-width: 70%;
 }
 
 .hero .hero-btn {
     color: #ffffff;
     font-weight: 700;
     font-size: 1.125rem;
-    background-image: none;
-    margin: 0;
     padding: 19px 69px 19px 68px;
-    transition: 0.5s;
+    transition: 0.5s
 }
 
 .hero .btn-discord:hover {
@@ -46,6 +45,22 @@
 
 .hero .btn-instagram {
     background: #e54786;
+}
+
+@media (max-width: 991px) {
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    .hero img {
+      max-width: 70%;
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    .about {
+      padding-top: 200px !important;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -72,22 +87,6 @@
 
 .about .about-text .about-text-lg-alt {
     color: rgb(15, 206, 219);
-}
-
-.section-title {
-    color: #ffffff;
-    font-size: 4.5rem;
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin: 9px 0 auto;
-    border-style: solid;
-    border-color: #ffffff;
-    border-left-width: 20px;
-    border-top-width: 0 !important;
-    border-right-width: 0 !important;
-    border-bottom-width: 0 !important;
-    padding: 10px 20px;
 }
 
 .about .title-container {
