@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif, "Quicksand";
+    font-family: sans-serif;
     color: #ffffff;
 }
 
@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: sans-serif, Roboto;
+    font-family: sans-serif;
 }
 
 section {
