@@ -7,24 +7,37 @@
     height: 100vh;
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(2, 0, 36, 1) 70%, rgb(6, 6, 87) 100%);
-    padding-top: 200px;
+    position: relative;
+    padding-top: 82px;
 }
 
 .hero h1 {
     font-weight: 700;
     font-size: 8.175rem;
     line-height: 0.8;
-    margin: 0 auto 0 1px;
     color: aliceblue;
-    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero h1 span {
+    color:rgb(15, 206, 219);
 }
 
 .hero .hero-btn {
-    color: #ffffff;
+    width: 300px;
     font-weight: 700;
     font-size: 1.125rem;
     padding: 19px 69px 19px 68px;
     transition: 0.5s
+}
+
+.hero .btn-discord {
+    background: #0054f7;
+}
+
+.hero .btn-instagram {
+    background: #e54786;
 }
 
 .hero .btn-discord:hover {
@@ -39,27 +52,30 @@
     color: #e54786;
 }
 
-.hero .btn-discord {
-    background: #0054f7;
+@media (max-width: 1200px) {
+    .hero img {
+        display: none;
+    }
+    .hero {
+        text-align: center;
+        padding-top: 58px;
+    }
 }
 
-.hero .btn-instagram {
-    background: #e54786;
-}
-
-@media (max-width: 991px) {
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+        padding-top: 58px;
+        background-size: cover;
+    }
     .hero h1 {
         font-size: 5rem;
     }
+}
 
-    .hero img {
-      max-width: 70%;
-      margin-right: 0;
-      margin-left: auto;
-    }
-
-    .about {
-      padding-top: 200px !important;
+@media (max-height: 500px) {
+    .hero {
+        height: 120vh;
     }
 }
 
@@ -90,13 +106,16 @@
 }
 
 .about .title-container {
+    padding-top: 40px;
     margin-left: auto;
     margin-right: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Roadmap Section
 --------------------------------------------------------------*/
+
 .roadmap {
     width: 100%;
     background: rgb(0, 0, 0);
@@ -124,67 +143,76 @@
     color: #fff;
     max-height: 50px;
     z-index: 2;
-  }
-  
-  .how-it-works.row .col-2 {
+}
+
+.how-it-works.row .col-2 {
     align-self: stretch;
-  }
-  .how-it-works.row .col-2::after {
+}
+
+.how-it-works.row .col-2::after {
     content: "";
     position: absolute;
     border-left: 3px solid #0054f7;
     z-index: 1;
-  }
-  .how-it-works.row .col-2.bottom::after {
+}
+
+.how-it-works.row .col-2.bottom::after {
     height: 50%;
     left: 50%;
     top: 50%;
-  }
-  .how-it-works.row .col-2.full::after {
+}
+
+.how-it-works.row .col-2.full::after {
     height: 100%;
     left: calc(50% - 3px);
-  }
-  .how-it-works.row .col-2.top::after {
+}
+
+.how-it-works.row .col-2.top::after {
     height: 50%;
     left: 50%;
     top: 0;
-  }
-  
-  
-  .timeline div {
+}
+
+.timeline div {
     padding: 0;
     height: 40px;
-  }
-  .timeline hr {
+}
+
+.timeline hr {
     border-top: 3px solid #0054f7;
     margin: 0;
     top: 17px;
     position: relative;
-  }
-  .timeline .col-2 {
+}
+
+.timeline .col-2 {
     display: flex;
     overflow: hidden;
-  }
-  .timeline .corner {
+}
+
+.timeline .corner {
     border: 3px solid #0054f7;
     width: 100%;
     position: relative;
     border-radius: 15px;
-  }
-  .timeline .top-right {
+}
+
+.timeline .top-right {
     left: 50%;
     top: -50%;
-  }
-  .timeline .left-bottom {
+}
+
+.timeline .left-bottom {
     left: -50%;
     top: calc(50% - 3px);
-  }
-  .timeline .top-left {
+}
+
+.timeline .top-left {
     left: -50%;
     top: -50%;
-  }
-  .timeline .right-bottom {
+}
+
+.timeline .right-bottom {
     left: 50%;
     top: calc(50% - 3px);
-  }
-  
+}

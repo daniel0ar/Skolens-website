@@ -1,11 +1,18 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
+    color: #ffffff;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Roboto, sans-serif;
 }
 
@@ -14,7 +21,6 @@ section {
 }
 
 .section-title {
-    color: #ffffff;
     font-size: 4.5rem;
     font-style: normal;
     text-transform: uppercase;
@@ -33,11 +39,11 @@ section {
     .section-title {
         font-size: 3rem;
     }
-
     .about {
-        padding: 100px 0;
+        padding: 100px 30px;
     }
 }
+
 
 /* Navbar section */
 
@@ -64,6 +70,7 @@ section {
     display: none;
 }
 
+
 /* Media qurey section */
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
@@ -76,22 +83,21 @@ section {
     .navTrigger {
         display: block;
     }
-
     .navbar {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-
     .brand img {
         height: 30px;
     }
-
     .navbar-nav {
         margin-top: 30px;
     }
 }
 
+
 /* Animation */
+
 
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 
@@ -152,7 +158,6 @@ section {
     50% {
         -webkit-transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(45deg);
     }
@@ -162,7 +167,6 @@ section {
     50% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(45deg);
     }
@@ -172,7 +176,6 @@ section {
     50% {
         -webkit-transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(45deg);
     }
@@ -182,7 +185,6 @@ section {
     50% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(45deg);
     }
@@ -192,11 +194,9 @@ section {
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         -webkit-transform: translateY(9px) rotate(0deg);
     }
-
     100% {
         -webkit-transform: translateY(9px) rotate(135deg);
     }
@@ -206,11 +206,9 @@ section {
     0% {
         transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         transform: translateY(9px) rotate(0deg);
     }
-
     100% {
         transform: translateY(9px) rotate(135deg);
     }
@@ -220,11 +218,9 @@ section {
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         -webkit-transform: translateY(9px) rotate(0deg);
     }
-
     100% {
         -webkit-transform: translateY(9px) rotate(135deg);
     }
@@ -234,11 +230,9 @@ section {
     0% {
         transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         transform: translateY(9px) rotate(0deg);
     }
-
     100% {
         transform: translateY(9px) rotate(135deg);
     }
@@ -248,11 +242,9 @@ section {
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         -webkit-transform: translateY(-9px) rotate(0deg);
     }
-
     100% {
         -webkit-transform: translateY(-9px) rotate(135deg);
     }
@@ -262,11 +254,9 @@ section {
     0% {
         transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         transform: translateY(-9px) rotate(0deg);
     }
-
     100% {
         transform: translateY(-9px) rotate(135deg);
     }
@@ -276,11 +266,9 @@ section {
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         -webkit-transform: translateY(-9px) rotate(0deg);
     }
-
     100% {
         -webkit-transform: translateY(-9px) rotate(135deg);
     }
@@ -290,11 +278,9 @@ section {
     0% {
         transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         transform: translateY(-9px) rotate(0deg);
     }
-
     100% {
         transform: translateY(-9px) rotate(135deg);
     }
