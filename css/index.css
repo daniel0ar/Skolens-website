@@ -4,11 +4,11 @@
 
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(2, 0, 36, 1) 70%, rgb(6, 6, 87) 100%);
     position: relative;
-    padding-top: 82px;
+    padding-top: 150px;
 }
 
 .hero h1 {
@@ -25,11 +25,12 @@
 }
 
 .hero .hero-btn {
-    width: 300px;
+    width: 200px;
     font-weight: 700;
     font-size: 1.125rem;
-    padding: 19px 69px 19px 68px;
-    transition: 0.5s
+    padding: 19px 0px;
+    transition: 0.5s;
+    color: #ffffff;
 }
 
 .hero .btn-discord {
@@ -65,11 +66,19 @@
 @media (max-width: 768px) {
     .hero {
         text-align: center;
-        padding-top: 58px;
         background-size: cover;
     }
     .hero h1 {
         font-size: 5rem;
+    }
+
+    .hero .hero-btn {
+        margin-bottom: 30px;
+    }
+
+    .hero {
+        width: 100%;
+        height: 80vh;
     }
 }
 
