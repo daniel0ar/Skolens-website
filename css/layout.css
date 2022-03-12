@@ -289,11 +289,11 @@ section {
 .affix {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #24346c !important;
+    background-color: #000000 !important;
 }
 
-.bg-blue {
-    background-color: #24346c;
+.bg-black {
+    background-color: #000000;
     background-blend-mode: overlay;
 }
 
