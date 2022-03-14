@@ -98,7 +98,6 @@
 }
 
 .about .about-text {
-    color: #ffffff;
     letter-spacing: 0px;
     font-size: 1.25rem;
     font-weight: 700;
@@ -120,6 +119,71 @@
     margin-right: 0;
 }
 
+/*--------------------------------------------------------------
+# Projects Section
+--------------------------------------------------------------*/
+
+.projects {
+    padding: 0px;
+}
+
+.project {
+    background-color: #181818;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    padding: 140px 0px;
+}
+
+.project h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project p {
+    letter-spacing: 0px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.projects .presis {
+    background: linear-gradient(to right,transparent,transparent 30%,#000c 65%,#000d),url(../img/presis-bg.jpg); 
+}
+
+.projects .patacon {
+    background: linear-gradient(to left,transparent,transparent 30%,#000c 65%,#000d),url(../img/patacon-bg.png);
+}
+
+.project .btn {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    min-width: 190px;
+    padding: 15px;
+    text-align: center;
+}
+
+.project .btn:hover {
+    background-color: #ffffff;
+    color: #181818;
+}
+
+@media (max-width: 574px) {
+    .projects .presis {
+        background: linear-gradient(to left,transparent,transparent 5%,#000c 60%,#000d) , url(../img/presis-bg.jpg);
+    }
+
+    .project .patacon {
+        background: linear-gradient(to left,transparent,transparent 5%,#000c 60%,#000d) , url(../img/patacon-bg.jpg);    
+    }
+}
 
 /*--------------------------------------------------------------
 # Roadmap Section
