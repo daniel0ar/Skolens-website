@@ -42,6 +42,10 @@ section {
     .about {
         padding: 100px 30px;
     }
+
+    section {
+        padding: 80px 40px;
+    }
 }
 
 
