@@ -1,3 +1,10 @@
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-primary: rgb(6, 6, 87);
+    --color-primary-light: rgb(85, 178, 255);
+}
+
 html,
 body {
     margin: 0;
@@ -5,6 +12,7 @@ body {
     box-sizing: border-box;
     font-family: sans-serif;
     color: #ffffff;
+    background-color: #000000;
 }
 
 h1,
@@ -74,6 +82,10 @@ section {
     display: none;
 }
 
+.brand {
+    font-family: Raleway;
+    font-weight: 700;
+}
 
 /* Media qurey section */
 
@@ -317,4 +329,11 @@ section {
     .myP {
         padding: 2%;
     }
+}
+
+/* Footer */
+.copy {
+    text-align: center;
+    background: #585858;
+    padding: 20px;
 }
