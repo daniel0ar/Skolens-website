@@ -12,7 +12,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    color: #ffffff;
+    color: var(--color-white);
     background-color: #000000;
 }
 
@@ -36,7 +36,7 @@ section {
     font-weight: 900;
     margin: 9px 0 auto;
     border-style: solid;
-    border-color: #ffffff;
+    border-color: var(--color-white);
     border-left-width: 20px;
     border-top-width: 0 !important;
     border-right-width: 0 !important;
