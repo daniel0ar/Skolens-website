@@ -67,11 +67,11 @@ section {
     -webkit-transition: 0.4s;
     transition: 0.4s;
     font-size: x-large;
-    font-weight: bold;
     max-width: 100vw;
 }
 
 .nav-link {
+    font-weight: bold;
     transition: 0.3s;
 }
 
@@ -84,8 +84,10 @@ section {
 }
 
 .brand {
-    font-family: Raleway;
-    font-weight: 700;
+    font-family: 'Raleway';
+    font-weight: 900;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /* Media qurey section */
