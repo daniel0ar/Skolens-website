@@ -41,12 +41,12 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background: rgba(84, 84, 84, 0.6);
+    background: rgba(20, 20, 20, 0.8);
   }
   
   .projects .projects-wrap::before {
     content: "";
-    background: rgba(84, 84, 84, 0.6);
+    background: rgba(20, 20, 20, 0.8);
     position: absolute;
     left: 30px;
     right: 30px;
