@@ -1,15 +1,15 @@
   // Porfolio isotope and filter
   $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item',
+    var projectsIsotope = $('.projects-container').isotope({
+      itemSelector: '.projects-item',
       layoutMode: 'fitRows'
     });
 
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
+    $('#projects-flters li').on('click', function() {
+      $("#projects-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
-      portfolioIsotope.isotope({
+      projectsIsotope.isotope({
         filter: $(this).data('filter')
       });
     });

@@ -29,6 +29,10 @@ section {
     padding: 80px 0;
 }
 
+.first-section {
+    padding: 40px 0px !important;
+}
+
 .section-title {
     font-size: 4.5rem;
     font-style: normal;

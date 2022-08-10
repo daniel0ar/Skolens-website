@@ -38,6 +38,10 @@
     transition: 0.3s;
 }
 
+.contact .contact-header {
+  margin-top: 30px;
+}
+
 .contact .php-email-form .loading {
     display: none;
     background: #fff;

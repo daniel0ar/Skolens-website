@@ -1,11 +1,11 @@
 /*--------------------------------------------------------------
-# Portfolio
+# Projects
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.projects .projects-item {
     margin-bottom: 30px;
   }
   
-  .portfolio #portfolio-flters {
+  .projects #projects-flters {
     padding: 0;
     margin: 0 auto 25px auto;
     list-style: none;
@@ -14,7 +14,7 @@
     padding: 2px 15px;
   }
   
-  .portfolio #portfolio-flters li {
+  .projects #projects-flters li {
     cursor: pointer;
     display: inline-block;
     padding: 19px 50px;
@@ -27,16 +27,16 @@
     border-radius: 5px;
   }
   
-  .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  .projects #projects-flters li:hover, .projects #projects-flters li.filter-active {
     background: var(--color-accent);
     color: var(--color-white);
   }
   
-  .portfolio #portfolio-flters li:last-child {
+  .projects #projects-flters li:last-child {
     margin-right: 0;
   }
   
-  .portfolio .portfolio-wrap {
+  .projects .projects-wrap {
     transition: 0.3s;
     position: relative;
     overflow: hidden;
@@ -44,7 +44,7 @@
     background: rgba(84, 84, 84, 0.6);
   }
   
-  .portfolio .portfolio-wrap::before {
+  .projects .projects-wrap::before {
     content: "";
     background: rgba(84, 84, 84, 0.6);
     position: absolute;
@@ -57,7 +57,7 @@
     opacity: 0;
   }
   
-  .portfolio .portfolio-wrap .portfolio-info {
+  .projects .projects-wrap .projects-info {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -73,7 +73,7 @@
     align-items: center;
   }
   
-  .portfolio .portfolio-wrap .portfolio-info::before {
+  .projects .projects-wrap .projects-info::before {
     display: block;
     content: "";
     width: 48px;
@@ -87,7 +87,7 @@
     z-index: 9994;
   }
   
-  .portfolio .portfolio-wrap .portfolio-info::after {
+  .projects .projects-wrap .projects-info::after {
     display: block;
     content: "";
     width: 48px;
@@ -101,13 +101,13 @@
     z-index: 9994;
   }
   
-  .portfolio .portfolio-wrap .portfolio-info h4 {
+  .projects .projects-wrap .projects-info h4 {
     font-size: 20px;
     color: var(--color-white);
     font-weight: 600;
   }
   
-  .portfolio .portfolio-wrap .portfolio-info p {
+  .projects .projects-wrap .projects-info p {
     color: var(--color-white);
     font-size: 14px;
     text-transform: uppercase;
@@ -115,12 +115,12 @@
     margin: 0;
   }
   
-  .portfolio .portfolio-wrap .portfolio-links {
+  .projects .projects-wrap .projects-links {
     text-align: center;
     z-index: 4;
   }
   
-  .portfolio .portfolio-wrap .portfolio-links a {
+  .projects .projects-wrap .projects-links a {
     color: var(--color-white);
     padding: 19px 50px;
     margin: 20px;
@@ -130,14 +130,14 @@
     border: solid var(--color-white);
   }
   
-  .portfolio .portfolio-wrap .portfolio-links a:hover {
+  .projects .projects-wrap .projects-links a:hover {
     font-weight: 700;
     text-decoration: none;
     background: var(--color-white);
     color: var(--color-black);
   }
 
-  .portfolio .portfolio-wrap:hover::before {
+  .projects .projects-wrap:hover::before {
     top: 0;
     left: 0;
     right: 0;
@@ -145,40 +145,40 @@
     opacity: 1;
   }
   
-  .portfolio .portfolio-wrap:hover .portfolio-info {
+  .projects .projects-wrap:hover .projects-info {
     opacity: 1;
   }
   
-  .portfolio .portfolio-wrap:hover .portfolio-info::before {
+  .projects .projects-wrap:hover .projects-info::before {
     top: 15px;
     left: 15px;
   }
   
-  .portfolio .portfolio-wrap:hover .portfolio-info::after {
+  .projects .projects-wrap:hover .projects-info::after {
     bottom: 15px;
     right: 15px;
   }
   
-  .portfolio .img-fluid {
+  .projects .img-fluid {
     width: 100%;
     height: auto;
   }
   
   /*--------------------------------------------------------------
-  # Portfolio Details
+  # projects Details
   --------------------------------------------------------------*/
-  .portfolio-details .portfolio-title {
+  .projects-details .projects-title {
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
   }
   
-  .portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+  .projects-details .projects-details-carousel .owl-nav, .projects-details .projects-details-carousel .owl-dots {
     margin-top: 5px;
     text-align: center;
   }
   
-  .portfolio-details .portfolio-details-carousel .owl-dot {
+  .projects-details .projects-details-carousel .owl-dot {
     display: inline-block;
     margin: 0 5px;
     width: 12px;
@@ -187,37 +187,37 @@
     background-color: var(--color-white) !important;
   }
   
-  .portfolio-details .portfolio-details-carousel .owl-dot.active {
+  .projects-details .projects-details-carousel .owl-dot.active {
     background-color: var(--color-accent) !important;
   }
   
-  .portfolio-details .portfolio-info {
+  .projects-details .projects-info {
     padding-top: 45px;
   }
   
-  .portfolio-details .portfolio-info h3 {
+  .projects-details .projects-info h3 {
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 20px;
   }
   
-  .portfolio-details .portfolio-info ul {
+  .projects-details .projects-info ul {
     list-style: none;
     padding: 0;
     font-size: 15px;
   }
   
-  .portfolio-details .portfolio-info ul li + li {
+  .projects-details .projects-info ul li + li {
     margin-top: 10px;
   }
   
-  .portfolio-details .portfolio-info p {
+  .projects-details .projects-info p {
     font-size: 15px;
     padding: 15px 0 0 0;
   }
   
   @media (max-width: 992px) {
-    .portfolio-details .portfolio-info {
+    .projects-details .projects-info {
       padding-top: 20px;
     }
   }
