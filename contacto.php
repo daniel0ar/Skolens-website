@@ -1,17 +1,9 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
-
-  // Replace contact@example.com with your real receiving email address
   ini_set('display_errors', 1);
   $errors = '';
   $statusMsg = '';
   $msgClass = '';
-  $myemail = 'ventas@mahisa.com.pe';
+  $myemail = 'skolenslab@gmail.com';
   if(empty($_POST['name'])  || 
     empty($_POST['email']) || 
     empty($_POST['message']))
@@ -21,7 +13,6 @@
 
   $name = $_POST['name']; 
   $email_address = $_POST['email'];
-  $telephone = $_POST['telephone'];
   $message = $_POST['message']; 
 
   if (!preg_match(
@@ -38,11 +29,11 @@
 
     $to = $myemail;
 
-    $email_subject = "Nuevo mensaje desde mahisa.com.pe";
+    $email_subject = "Nuevo mensaje del sitio web de Skolens";
 
     $email_body = "Has recibido un nuevo mensaje de una persona desde tu página web.".
 
-    " Detalles:\n Nombre: $name\n Teléfono: $telephone \n".
+    " Detalles:\n Nombre: $name\n".
 
     " Correo: $email_address\n Mensaje: \n\t $message";
 
@@ -53,5 +44,6 @@
     
     mail($to,$email_subject,$email_body,$headers);
   }
-  //header("location: mensaje-enviado");
+  header("location: index.html")
+  die();
 ?>
