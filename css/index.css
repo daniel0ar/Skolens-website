@@ -5,8 +5,9 @@
 .hero {
     width: 100%;
     height: 90vh;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(2, 0, 36, 1) 70%, rgb(6, 6, 87) 100%);
+    background: rgba(0, 0, 0,0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(2, 0, 36, 0.2) 70%, rgba(6, 6, 87,1) 100%);
+    z-index: 1;
     position: relative;
 }
 
@@ -124,6 +125,7 @@
 
 .projects {
     padding: 0px;
+    z-index: 1;
 }
 
 .project {
@@ -180,7 +182,7 @@
     }
 
     .project .patacon {
-        background: linear-gradient(to left,transparent,transparent 5%,#000c 60%,#000d) , url(../img/patacon-bg.jpg);    
+        background: linear-gradient(to left,transparent,transparent 5%,#000c 60%,#000d) , url(../img/patacon-bg.png);    
     }
 }
 
