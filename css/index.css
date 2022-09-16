@@ -7,8 +7,22 @@
     height: 90vh;
     /*background: rgba(0, 0, 0, 50);*/
     /*background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(2, 0, 36, 0.2) 70%, rgb(255, 196, 0) 100%);*/
-    z-index: 1;
     position: relative;
+}
+
+.hero .video-container {
+    overflow: hidden;
+    position: relative;
+  }
+
+.hero video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    filter: brightness(40%);
 }
 
 .hero h1 {
@@ -33,7 +47,7 @@
     color: #000000;
 }
 
-.hero .btn-discord {
+.hero .btn-comprar {
     background: rgb(199, 219, 15);
 }
 
@@ -41,7 +55,7 @@
     background: #e54786;
 }
 
-.hero .btn-discord:hover {
+.hero .btn-comprar:hover {
     background: transparent;
     border-color: rgb(199, 219, 15);
     color: rgb(199, 219, 15);
@@ -255,7 +269,7 @@
   }
 
   .projects h4{
-    font-size: 20px;
+    font-size: 4rem;
     color: var(--color-white);
     font-weight: 600;
   }
