@@ -5,8 +5,8 @@
 .hero {
     width: 100%;
     height: 90vh;
-    background: rgba(0, 0, 0,0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(2, 0, 36, 0.2) 70%, rgba(6, 6, 87,1) 100%);
+    /*background: rgba(0, 0, 0, 50);*/
+    /*background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(2, 0, 36, 0.2) 70%, rgb(255, 196, 0) 100%);*/
     z-index: 1;
     position: relative;
 }
@@ -21,7 +21,7 @@
 }
 
 .hero h1 span {
-    color:rgb(15, 206, 219);
+    color:rgb(199, 219, 15);
 }
 
 .hero .hero-btn {
@@ -30,11 +30,11 @@
     font-size: 1.125rem;
     padding: 19px 0px;
     transition: 0.5s;
-    color: #ffffff;
+    color: #000000;
 }
 
 .hero .btn-discord {
-    background: #0054f7;
+    background: rgb(199, 219, 15);
 }
 
 .hero .btn-instagram {
@@ -43,8 +43,8 @@
 
 .hero .btn-discord:hover {
     background: transparent;
-    border-color: #0054f7;
-    color: #0054f7;
+    border-color: rgb(199, 219, 15);
+    color: rgb(199, 219, 15);
 }
 
 .hero .btn-instagram:hover {
@@ -89,103 +89,176 @@
 }
 
 /*--------------------------------------------------------------
-# About Section
+# Projects
 --------------------------------------------------------------*/
-
-.about {
-    width: 100%;
-    background: rgb(6, 6, 87);
-}
-
-.about .about-text {
-    letter-spacing: 0px;
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 32px;
-}
-
-.about .about-text .about-text-lg {
-    font-weight: 700;
-    font-size: 1.875rem;
-}
-
-.about .about-text .about-text-lg-alt {
-    color: rgb(15, 206, 219);
-}
-
-.about .title-container {
-    padding-top: 40px;
-    margin-left: auto;
-    margin-right: 0;
-}
-
-/*--------------------------------------------------------------
-# Projects Section
---------------------------------------------------------------*/
-
-.projects {
-    padding: 0px;
-    z-index: 1;
-}
-
-.project {
-    background-color: #181818;
-    background-color: rgba(0, 0, 0, 0);
-    background-size: cover;
-    padding: 140px 0px;
-}
-
-.project h2 {
-    font-weight: 700;
-    font-size: 3rem;
-    color: aliceblue;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.project p {
-    letter-spacing: 0px;
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 32px;
-}
-
-.projects .presis {
-    background: linear-gradient(to right,transparent,transparent 30%,#000c 65%,#000d),url(../img/presis-bg.jpg); 
-}
-
-.projects .patacon {
-    background: linear-gradient(to left,transparent,transparent 30%,#000c 65%,#000d),url(../img/patacon-bg.png);
-}
-
-.project .btn {
-    background-color: transparent;
-    border-color: #ffffff;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 700;
-    font-size: 1.125rem;
-    letter-spacing: 1px;
-    min-width: 190px;
-    padding: 15px;
+.projects .projects-item {
+    margin-bottom: 30px;
+  }
+  
+  .projects #projects-flters {
+    padding: 0;
+    margin: 0 auto 25px auto;
+    list-style: none;
     text-align: center;
-}
+    border-radius: 50px;
+    padding: 2px 15px;
+  }
+  
+  .projects #projects-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 19px 50px;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1;
+    color: #444444;
+    margin: 0 4px 8px 4px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 5px;
+  }
+  
+  .projects #projects-flters li:hover, .projects #projects-flters li.filter-active {
+    background: var(--color-accent);
+    color: var(--color-white);
+  }
+  
+  .projects #projects-flters li:last-child {
+    margin-right: 0;
+  }
+  
+  .projects .projects-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(20, 20, 20, 0.8);
+  }
+  
+  .projects .projects-wrap::before {
+    content: "";
+    background: rgba(20, 20, 20, 0.8);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+  
+  .projects .projects-wrap .projects-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .projects .projects-wrap .projects-info::before {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    border-top: 3px solid var(--color-white);
+    border-left: 3px solid var(--color-white);
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+  }
+  
+  .projects .projects-wrap .projects-info::after {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    border-bottom: 3px solid var(--color-white);
+    border-right: 3px solid var(--color-white);
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+  }
+  
+  .projects .projects-wrap .projects-info h4 {
+    font-size: 20px;
+    color: var(--color-white);
+    font-weight: 600;
+  }
+  
+  .projects .projects-wrap .projects-info p {
+    color: var(--color-white);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .projects .projects-wrap .projects-links {
+    text-align: center;
+    z-index: 4;
+  }
+  
+  .projects .projects-wrap .projects-links a {
+    color: var(--color-white);
+    padding: 19px 50px;
+    margin: 20px;
+    font-size: 18px;
+    display: inline-block;
+    transition: 0.5s;
+    border: solid var(--color-white);
+  }
+  
+  .projects .projects-wrap .projects-links a:hover {
+    font-weight: 700;
+    text-decoration: none;
+    background: var(--color-white);
+    color: var(--color-black);
+  }
 
-.project .btn:hover {
-    background-color: #ffffff;
-    color: #181818;
-}
+  .projects .projects-wrap:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .projects .projects-wrap:hover .projects-info {
+    opacity: 1;
+  }
+  
+  .projects .projects-wrap:hover .projects-info::before {
+    top: 15px;
+    left: 15px;
+  }
+  
+  .projects .projects-wrap:hover .projects-info::after {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .projects .img-fluid {
+    width: 100%;
+    height: auto;
+  }
 
-@media (max-width: 574px) {
-    .projects .presis {
-        background: linear-gradient(to left,transparent,transparent 5%,#000c 60%,#000d) , url(../img/presis-bg.jpg);
-    }
-
-    .project .patacon {
-        background: linear-gradient(to left,transparent,transparent 5%,#000c 60%,#000d) , url(../img/patacon-bg.png);    
-    }
-}
-
+  .projects h4{
+    font-size: 20px;
+    color: var(--color-white);
+    font-weight: 600;
+  }
 
 /*--------------------------------------------------------------
 # Contact Section
