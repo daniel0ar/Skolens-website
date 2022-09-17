@@ -286,6 +286,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 .gallery .gallery-item img {
