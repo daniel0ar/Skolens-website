@@ -325,6 +325,25 @@
   margin: 0;
 }
 
+.gallery .btn {
+  font-size: 18px;
+  background: var(--color-accent);
+  color: #fff;
+  padding: 10px 20px;
+  transition: 0.3s;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .gallery .patacones > div:nth-last-child(-n+97) {
+    display: none;
+  }
+
+  .gallery .btn {
+    display: inline-block;
+  }
+}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
