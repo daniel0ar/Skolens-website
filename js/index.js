@@ -1,3 +1,10 @@
+// Instantiate `CircleType` with an HTML element.
+const circleType = new CircleType(document.getElementById('hero_header'));
+
+// Set the text radius and direction. Note: setter methods are chainable.
+circleType.radius(300);
+
+
 //GLightbox for collection display
 const glightbox = GLightbox({
     selector: '.glightbox'

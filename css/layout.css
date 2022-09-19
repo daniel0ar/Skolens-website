@@ -30,7 +30,8 @@ section {
 }
 
 .first-section {
-    padding: 40px 0px;
+    padding: 0;
+    margin-top: -3rem;
 }
 
 .section-title {
