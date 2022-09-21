@@ -122,17 +122,15 @@
 
 .buy .buy-item {
   margin-bottom: 30px;
-}
-
-.buy .buy-wrap {
-  transition: 0.3s;
-  position: relative;
+  border-radius: 20px;
   overflow: hidden;
-  z-index: 1;
-  background: rgba(20, 20, 20, 0.8);
-  border-radius: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
+.buy .buy-item img{
+  height: 100%;
+}
 .buy .buy-wrap::before {
   content: "";
   background: rgba(20, 20, 20, 0.8);
@@ -284,12 +282,15 @@
 }
 
 .gallery .gallery-links {
+  display: flex;
   position: absolute;
   inset: 0;
   opacity: 0;
   transition: all ease-in-out 0.3s;
   background: rgba(0, 0, 0, 0.6);
   z-index: 3;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery .gallery-links .preview-link,
