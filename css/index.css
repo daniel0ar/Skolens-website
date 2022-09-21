@@ -354,6 +354,32 @@
 }
 
 /*--------------------------------------------------------------
+# Related Section
+--------------------------------------------------------------*/
+.related .card{
+  background: none;
+  border-radius: 20px;
+  border-color: rgb(65, 65, 65);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.related .card:hover{
+  -webkit-transform: scale(1.1); 
+      -ms-transform: scale(1.1); 
+          transform: scale(1.1);
+}
+
+.related a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.related .card .card-title{
+  font-weight: 700;
+}
+
+/*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 
