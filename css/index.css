@@ -43,7 +43,7 @@
 }
 
 .hero h1 span:nth-last-child(-n+7) {
-  color: rgb(199, 219, 15);
+  color: var(--color-yellow);
 }
 
 .hero .hero-btn {
@@ -56,23 +56,84 @@
 }
 
 .hero .btn-comprar {
-  background: rgb(199, 219, 15);
-}
-
-.hero .btn-instagram {
-  background: #e54786;
+  background: var(--color-yellow);
 }
 
 .hero .btn-comprar:hover {
   background: transparent;
-  border-color: rgb(199, 219, 15);
-  color: rgb(199, 219, 15);
+  border-color: var(--color-yellow);
+  color: var(--color-yellow);
 }
 
-.hero .btn-instagram:hover {
-  background: transparent;
-  border-color: #e54786;
-  color: #e54786;
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: relative;
+}
+
+.arrows path {
+  stroke: var(--color-yellow);
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+  {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 和 Chrome */
 }
 
 @media (max-width: 1200px) {
@@ -122,15 +183,15 @@
 
 .buy .buy-item {
   margin-bottom: 30px;
-  border-radius: 20px;
+  border-radius: 30px;
   overflow: hidden;
   margin-top: auto;
-  margin-bottom: auto;
 }
 
-.buy .buy-item img{
+.buy .buy-item img {
   height: 100%;
 }
+
 .buy .buy-wrap::before {
   content: "";
   background: rgba(20, 20, 20, 0.8);
@@ -335,16 +396,11 @@
 }
 
 .gallery .btn {
-  font-size: 18px;
-  background: var(--color-accent);
-  color: #fff;
-  padding: 10px 20px;
-  transition: 0.3s;
   display: none;
 }
 
 @media (max-width: 768px) {
-  .gallery .patacones > div:nth-last-child(-n+97) {
+  .gallery .patacones>div:nth-last-child(-n+97) {
     display: none;
   }
 
@@ -356,18 +412,19 @@
 /*--------------------------------------------------------------
 # Related Section
 --------------------------------------------------------------*/
-.related .card{
+.related .card {
   background: none;
   border-radius: 20px;
   border-color: rgb(65, 65, 65);
   overflow: hidden;
   transition: 0.3s;
+  margin-bottom: 30px;
 }
 
-.related .card:hover{
-  -webkit-transform: scale(1.1); 
-      -ms-transform: scale(1.1); 
-          transform: scale(1.1);
+.related .card:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .related a {
@@ -375,7 +432,7 @@
   text-decoration: none;
 }
 
-.related .card .card-title{
+.related .card .card-title {
   font-weight: 700;
 }
 

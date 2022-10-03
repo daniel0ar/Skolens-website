@@ -28,6 +28,12 @@
     line-height: 32px;
 }
 
+@media (max-width: 1200px) {
+    .us img {
+      display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .us {
         height: 100vh;
