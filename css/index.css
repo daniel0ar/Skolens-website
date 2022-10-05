@@ -181,6 +181,10 @@
   margin-top: -10%;
 }
 
+.buy .buy-item-title {
+  font-size: 2.6rem;
+}
+
 .buy .buy-item {
   margin-bottom: 30px;
   border-radius: 30px;
@@ -188,8 +192,13 @@
   margin-top: auto;
 }
 
-.buy .buy-item img {
-  height: 100%;
+.buy .buy-item video {
+  max-height: 490px;
+  max-width: auto;
+}
+
+.buy .buy-container p {
+  text-align: justify;
 }
 
 .buy .buy-wrap::before {

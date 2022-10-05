@@ -1,0 +1,60 @@
+{
+    "name": "Patacon #61",
+    "symbol": "PTCF",
+    "image": "61.png",
+    "properties": {
+        "files": [
+            {
+                "uri": "0.png",
+                "type": "image/png"
+            }
+        ],
+        "category": "image",
+        "creators": [
+            {
+                "address": "BHCNZMb7MckQ7hgP12Zaay4ZDWJJHNgSSK4HDNoJfNZV",
+                "share": 100
+            }
+        ]
+    },
+    "description": "A friendly Patacon living in the Solana Ecosystem.",
+    "seller_fee_basis_points": 500,
+    "attributes": [
+        {
+            "trait_type": "Background",
+            "value": "Gradient Black"
+        },
+        {
+            "trait_type": "Top",
+            "value": "Patacon"
+        },
+        {
+            "trait_type": "Face",
+            "value": "Zorro"
+        },
+        {
+            "trait_type": "Bottom",
+            "value": "Patacon"
+        },
+        {
+            "trait_type": "Shoes",
+            "value": "Black Boots"
+        },
+        {
+            "trait_type": "Hands",
+            "value": "Black"
+        },
+        {
+            "trait_type": "Accesory 1",
+            "value": "Zorro Hat"
+        },
+        {
+            "trait_type": "Accesory 2",
+            "value": "Zorro Sword"
+        }
+    ],
+    "collection": {
+        "name": "Patacon Friends",
+        "family": "Skolens"
+    }
+}

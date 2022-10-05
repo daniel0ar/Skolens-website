@@ -1,0 +1,60 @@
+{
+    "name": "Patacon #24",
+    "symbol": "PTCF",
+    "image": "24.png",
+    "properties": {
+        "files": [
+            {
+                "uri": "0.png",
+                "type": "image/png"
+            }
+        ],
+        "category": "image",
+        "creators": [
+            {
+                "address": "BHCNZMb7MckQ7hgP12Zaay4ZDWJJHNgSSK4HDNoJfNZV",
+                "share": 100
+            }
+        ]
+    },
+    "description": "A friendly Patacon living in the Solana Ecosystem.",
+    "seller_fee_basis_points": 500,
+    "attributes": [
+        {
+            "trait_type": "Background",
+            "value": "Gradient Green"
+        },
+        {
+            "trait_type": "Top",
+            "value": "Patacon"
+        },
+        {
+            "trait_type": "Face",
+            "value": "Gothic"
+        },
+        {
+            "trait_type": "Bottom",
+            "value": "Gothic Tights"
+        },
+        {
+            "trait_type": "Shoes",
+            "value": "Gothic Boots"
+        },
+        {
+            "trait_type": "Hands",
+            "value": "Black"
+        },
+        {
+            "trait_type": "Accesory 1",
+            "value": "None"
+        },
+        {
+            "trait_type": "Accesory 2",
+            "value": "None"
+        }
+    ],
+    "collection": {
+        "name": "Patacon Friends",
+        "family": "Skolens"
+    }
+}

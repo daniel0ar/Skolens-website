@@ -1,0 +1,60 @@
+{
+    "name": "Patacon #93",
+    "symbol": "PTCF",
+    "image": "93.png",
+    "properties": {
+        "files": [
+            {
+                "uri": "0.png",
+                "type": "image/png"
+            }
+        ],
+        "category": "image",
+        "creators": [
+            {
+                "address": "BHCNZMb7MckQ7hgP12Zaay4ZDWJJHNgSSK4HDNoJfNZV",
+                "share": 100
+            }
+        ]
+    },
+    "description": "A friendly Patacon living in the Solana Ecosystem.",
+    "seller_fee_basis_points": 500,
+    "attributes": [
+        {
+            "trait_type": "Background",
+            "value": "Gradient Black Orange"
+        },
+        {
+            "trait_type": "Top",
+            "value": "Patacon"
+        },
+        {
+            "trait_type": "Face",
+            "value": "Vampire"
+        },
+        {
+            "trait_type": "Bottom",
+            "value": "Patacon"
+        },
+        {
+            "trait_type": "Shoes",
+            "value": "Vampire"
+        },
+        {
+            "trait_type": "Hands",
+            "value": "Brown"
+        },
+        {
+            "trait_type": "Accesory 1",
+            "value": "Bat Hair"
+        },
+        {
+            "trait_type": "Accesory 2",
+            "value": "Bat Wings"
+        }
+    ],
+    "collection": {
+        "name": "Patacon Friends",
+        "family": "Skolens"
+    }
+}
