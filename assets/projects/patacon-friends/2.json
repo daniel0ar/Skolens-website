@@ -1,0 +1,60 @@
+{
+    "name": "Patacon #53",
+    "symbol": "PTCF",
+    "image": "53.png",
+    "properties": {
+        "files": [
+            {
+                "uri": "0.png",
+                "type": "image/png"
+            }
+        ],
+        "category": "image",
+        "creators": [
+            {
+                "address": "BHCNZMb7MckQ7hgP12Zaay4ZDWJJHNgSSK4HDNoJfNZV",
+                "share": 100
+            }
+        ]
+    },
+    "description": "A friendly Patacon living in the Solana Ecosystem.",
+    "seller_fee_basis_points": 500,
+    "attributes": [
+        {
+            "trait_type": "Background",
+            "value": "Breaking Bad"
+        },
+        {
+            "trait_type": "Top",
+            "value": "Jesse"
+        },
+        {
+            "trait_type": "Face",
+            "value": "Jesse"
+        },
+        {
+            "trait_type": "Bottom",
+            "value": "Jesse"
+        },
+        {
+            "trait_type": "Shoes",
+            "value": "Jesse"
+        },
+        {
+            "trait_type": "Hands",
+            "value": "White"
+        },
+        {
+            "trait_type": "Accesory 1",
+            "value": "Jesse Beanie"
+        },
+        {
+            "trait_type": "Accesory 2",
+            "value": "None"
+        }
+    ],
+    "collection": {
+        "name": "Patacon Friends",
+        "family": "Skolens"
+    }
+}

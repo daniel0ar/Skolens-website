@@ -1,0 +1,50 @@
+.buy {
+    height: 75vh;
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+
+.buy h2 {
+    font-weight: 700;
+}
+
+.buy .btn-comprar2 {
+    width: 200px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 19px 0px;
+    transition: 0.5s;
+    color: #000000;
+    border: #000000;
+}
+
+.hero .btn-comprar2:hover {
+    font-size: larger;
+    background: transparent;
+    border-color: var(--color-yellow);
+    color: var(--color-yellow);
+  }
+  
+
+.half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 1rem;
+    -webkit-transition: 500ms linear;
+    -moz-transition: 500ms linear;
+    -o-transition: 500ms linear;
+    -ms-transition: 500ms linear;
+    transition: 500ms linear;
+}
+
+.left-half:hover {
+    background:  var(--color-primary);
+}
+
+.right-half:hover {
+    background: var(--color-yellow);
+    color: var(--color-black);
+}
