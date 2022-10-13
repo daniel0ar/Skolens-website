@@ -423,7 +423,7 @@
   }
 
   .gallery .btn {
-    display: none-block;
+    display: inline-block;
   }
 }
 

@@ -69,7 +69,7 @@ section {
 }
 
 .btn-regular {
-    background: rgb(199, 219, 15);
+    background: var(--color-yellow);
     width: 150px;
     font-weight: 700;
     font-size: 1.125rem;
@@ -79,8 +79,8 @@ section {
   
   .btn-regular:hover {
     background: transparent;
-    border-color: rgb(199, 219, 15);
-    color: rgb(199, 219, 15);
+    border-color: var(--color-yellow);
+    color: var(--color-yellow);
   }
 
 
