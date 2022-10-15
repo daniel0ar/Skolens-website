@@ -154,7 +154,7 @@
   }
 
   .hero h1 {
-    display: none;
+    font-size: 5rem;
   }
 
   .hero .hero-btn {
