@@ -72,4 +72,8 @@
   .gallery .btn {
     display: none;
   }
+
+  .gallery .minted {
+    filter:brightness(0.2);
+  }
   
