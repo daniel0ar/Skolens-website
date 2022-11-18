@@ -417,6 +417,10 @@
   display: none;
 }
 
+.gallery .minted {
+  filter: brightness(0.2);
+}
+
 @media (max-width: 768px) {
   .gallery .patacones>div:nth-last-child(-n+97) {
     display: none;
@@ -425,6 +429,7 @@
   .gallery .btn {
     display: inline-block;
   }
+
 }
 
 /*--------------------------------------------------------------
