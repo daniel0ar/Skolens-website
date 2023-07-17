@@ -93,10 +93,10 @@
 }
 
 .hero .hero-btn {
-  width: 200px;
+  width: 250px;
   font-weight: 700;
   font-size: 1.125rem;
-  padding: 19px 0px;
+  padding: 19px 5px;
   transition: 0.5s;
   color: #000000;
 }

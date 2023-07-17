@@ -19,7 +19,7 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 4ch;
-  padding: 30px 0 !important;
+  padding: 15px 0 !important;
 }
 
 .inner-section:nth-child(even) {
