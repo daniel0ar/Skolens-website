@@ -1,0 +1,27 @@
+.vertical-section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  overflow-x: hidden;
+  display: flex;
+  position: sticky;
+  top:0;
+}
+
+.inner-section {
+  min-width: 40vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4ch;
+  padding: 30px 0 !important;
+}
+
+.inner-section:nth-child(even) {
+  color: white;
+}

@@ -18,11 +18,13 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/layout.css" rel="stylesheet">
+    <link href="css/h-scroll.css" rel="stylesheet">
+    
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="brand" href="index.html">Skolens</a>
             <a data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -49,7 +51,43 @@
         </div>
     </nav>
 
-    <section id="hero" class="hero first-section">
+    <section id="newhero" class="newhero first-section">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-12">
+                    <div>
+                        <h1 id="new_header"> Patacon <span> Friends </span></h1>
+                        <h3>Ediciones especiales</h3>
+                    </div>
+                    <div class="sticky-container">
+                        <main>
+                            <section class="inner-section">
+                            <img src="img/patacon_esp_1.gif" alt="" class="img img-fluid">
+                            </section>
+                            <section class="inner-section">
+                            <img src="img/patacon_esp_2.png" alt="" class="img img-fluid">
+                            </section>
+                            <section class="inner-section">
+                            <img src="img/patacon_esp_3.jpg" alt="" class="img img-fluid">
+                            </section>
+                        </main>
+                    </div>
+                    <svg class="arrows">
+                        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                    </svg>
+                    <br>
+                    <br>    
+                    <a class="btn hero-btn btn-comprar" href="https://opensea.io/collection/patacon-friends-se-special-editions"> Explorar </a>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--section id="hero" class="hero first-section">
         <div class="video-container">
             <video class="w-80" autoplay muted loop>
                 <source src="img/hero.mp4" type="video/mp4">
@@ -72,7 +110,7 @@
         </div>
         </div>
 
-    </section>
+    </section-->
 
     <!-- ======= Projects Section ======= -->
     <section id="buy" class="buy">
@@ -1315,6 +1353,7 @@
     <script src="js/circletype.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/h-scroll.js"></script>
 
 </body>
 
