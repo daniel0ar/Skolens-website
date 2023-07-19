@@ -49,6 +49,19 @@
   color: var(--color-yellow);
 }
 
+.newhero .mobile-sticky-container {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .newhero .mobile-sticky-container{
+    display: block;
+  }
+
+  .newhero .sticky-container{
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
