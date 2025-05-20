@@ -23,27 +23,30 @@
   }
 
 
-  if( empty($errors))
-
+  if(empty($errors))
   {
-
     $to = $myemail;
-
     $email_subject = "Nuevo mensaje del sitio web de Skolens";
-
     $email_body = "Has recibido un nuevo mensaje de una persona desde tu página web.".
-
     " Detalles:\n Nombre: $name\n".
-
     " Correo: $email_address\n Mensaje: \n\t $message";
-
     $headers = "From: $myemail\n";
-
     $headers .= "Reply-To: $email_address";
-
     
-    mail($to,$email_subject,$email_body,$headers);
+    if(mail($to,$email_subject,$email_body,$headers)) {
+        $statusMsg = "¡Mensaje enviado exitosamente!";
+        $msgClass = "success";
+    } else {
+        $statusMsg = "Error al enviar el mensaje. Por favor intente nuevamente.";
+        $msgClass = "error";
+    }
+  } else {
+    $statusMsg = $errors;
+    $msgClass = "error";
   }
-  header("location: index.html")
+
+  $_SESSION['status_msg'] = $statusMsg;
+  $_SESSION['msg_class'] = $msgClass;
+  header("Location: index.html");
   die();
 ?>
